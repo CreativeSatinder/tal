@@ -17,5 +17,5 @@ Areas of Improvement.
 1. Requirement for the action KEEP is not clear. If had more time, i can implement that also. As of now Keep is just re-checking if the given time slot is within the allowed range then keeping it as it is. 
 2. Keep asking the commands untill user wants to exit from system is not implemented. After processing one action, program will exit and have to relaunch for next command.
 3. Connectionstring is hardcoded as of now, need to be made configurable.
-4. **Unit Tests are not implemented yet due to time contraint.**
+4. **Unit Tests are not implemented yet due to time constraint.**
    
