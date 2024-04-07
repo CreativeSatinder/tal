@@ -8,7 +8,14 @@ Navigate to the "SQL Server Object Explorer".
 Connect to their SQL Server Express LocalDB instance (if not already connected).
 Open a new query window.
 Paste the provided SQL script into the query window.
-Execute the script to create the database and tables.
+Execute the below script to create the database and tables.
+
+   Create database AppointmentsDB
+   GO
+   use AppointmentsDB
+   GO
+   CREATE TABLE Appointments(ID BIGINT Identity, DateOfAppointment DateTime, TimeOfAppointment TIME)
+   GO
 
 Please download and map the code to yor local and open in Visual Studio.
 
