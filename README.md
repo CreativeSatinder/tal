@@ -1,4 +1,4 @@
-# tal
+# Calendar Booking : TAL
 repository to share the code with TAL
 
 Instructions to create the database.
