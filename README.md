@@ -17,7 +17,7 @@ Execute the below script to create the database and tables.
    CREATE TABLE Appointments(ID BIGINT Identity, DateOfAppointment DateTime, TimeOfAppointment TIME)
    GO
 
-Please download and map the code to yor local and open in Visual Studio.
+Please download and map the code to yor local and open in Visual Studio. Build the solution it will add the required packages.
 
 Areas of Improvement.
 
