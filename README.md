@@ -11,18 +11,31 @@ Open a new query window.
 Paste the provided SQL script into the query window.
 Execute the below script to create the database and tables.
 
-   Create database AppointmentsDB
+   Create database Bookings
+
    GO
-   use AppointmentsDB
+
+   use Bookings
+
    GO
-   CREATE TABLE Appointments(ID BIGINT Identity, DateOfAppointment DateTime, TimeOfAppointment TIME)
+
+   CREATE TABLE Appointments
+	(
+		ID BIGINT Identity PRIMARY KEY, 
+		DateOfAppointment DateTime, 
+		TimeOfAppointment TIME, 
+		CreatedBy VARCHAR(100), 
+		ModifiedBy VARCHAR(100), 
+	)
+
    GO
+
 
 Areas of Improvement
 
 •	Connectionstring is hardcoded as of now, I can make it configurable and include more configuration keys/parameters such as ReservedTimeSlots using database config table. Also, can implement key-vault service depending on requirements.
 •  Keep asking the commands untill user wants to exit from system is not implemented. After processing one action, program will exit and have to relaunch for next command.
-•	Unit Tests are not implemented yet due to time constraint. I would be able to implement unit testing frameworks such as MSTest, xUnit, nUnit or Moq  to create fake objects that can simulate the behaviour of real objects. Also, would be able to implement quality gate       using tools such as Checkmarx, SONAR
+•	Unit Tests are not implemented yet due to time constraint. I would be able to implement unit testing frameworks such as MSTest, xUnit, nUnit or Moq  to create fake objects that can simulate the behaviour of real objects. Also, would be able to implement quality        gate using tools such as Checkmarx, SONAR
 •	Given more time, I would be able to implement detailed object-oriented approach with abstraction, inheritance with base classes & interfaces using SOLID principles. 
 •	Given more time, I would be able to create a Relational database with more entities and include normalisation principles.
 •	Given more time, I would have used MVC architecture for easier maintenance, better scalability, more flexibility, and higher testability.
