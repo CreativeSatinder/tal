@@ -36,7 +36,10 @@ Execute the below script to create the database and tables.
  	
 	Screenshots are given below
 
-	Add
+	Add (Reserved Timeslot)
+ 	![image](https://github.com/CreativeSatinder/tal/assets/126883284/b602d7b1-f3fd-441c-b25d-fcc892b8c59b)
+
+	Add (Success)
  	![image](https://github.com/CreativeSatinder/tal/assets/126883284/be6a8d5c-b940-46ec-8c28-7f69a8f2d8bc)
 
 	Delete (Not found)
