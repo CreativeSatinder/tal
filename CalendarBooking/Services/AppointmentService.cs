@@ -12,7 +12,8 @@ namespace CalendarBooking.Services
             _context = context;
         }
 
-        public void AddAppointment(DateTime date, TimeSpan time)
+        //Function to add a new appointment
+        public void AddAppointment(DateTime date, TimeSpan time, string username)
         {
             // Check if the specified time slot is within the acceptable time range (9 AM - 5 PM)
             if (time < TimeSpan.FromHours(9) || time > TimeSpan.FromHours(17))
@@ -36,11 +37,12 @@ namespace CalendarBooking.Services
             }
 
             // Add the appointment
-            _context.Appointments.Add(new Appointment { DateOfAppointment = date, TimeOfAppointment = time });
+            _context.Appointments.Add(new Appointment { DateOfAppointment = date, TimeOfAppointment = time, CreatedBy = username });
             _context.SaveChanges();
             Console.WriteLine("Appointment added successfully.");
         }
 
+        //Function to delete an existing appointment
         public void DeleteAppointment(DateTime date, TimeSpan time)
         {
             // Find the appointment to delete
@@ -59,6 +61,7 @@ namespace CalendarBooking.Services
             Console.WriteLine("Appointment deleted successfully.");
         }
 
+        //Function to find a free slot for a given date
         public void FindFreeTimeslot(DateTime date)
         {
             // Get all appointments for the specified date
@@ -85,6 +88,7 @@ namespace CalendarBooking.Services
             }
         }
 
+        //Function to keep time slot
         public void KeepTimeslot(TimeSpan time)
         {
             // Check if the specified time slot is within the acceptable time range (9 AM - 5 PM)

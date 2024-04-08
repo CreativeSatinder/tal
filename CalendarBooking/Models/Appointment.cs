@@ -6,5 +6,6 @@ namespace CalendarBooking.Models
         public long Id { get; set; }
         public DateTime DateOfAppointment { get; set; }
         public TimeSpan TimeOfAppointment { get; set; }
+        public  string CreatedBy { get; set; }
     }
 }
