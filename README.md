@@ -1,7 +1,7 @@
 # Calendar Booking : TAL
 repository to share the code with TAL
 
-Please download and map the code to yor local and open in Visual Studio. Build the solution it will add the required packages.
+Please download and map the code to your local and open in Visual Studio. Build the solution it will add the required packages.
 
 Instructions to create the database.
 Open Visual Studio.
